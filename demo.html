@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>十大知识管理领域</title>
+    <style>
+      .main {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+      }
+      .wraper {
+        flex: 1;
+        margin-left: 200px;
+      }
+      .wraper div {
+        width: 50%;
+        height: 100%;
+        border: 1px solid pink;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="wraper">
+        <div id="div"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var list = [
+      {
+        title: "整合管理",
+        txt: "识别、定义、组合、统一和协调各项目管理过程组的各个子过程和活动",
+      },
+      {
+        title: "范围管理",
+        txt: "识别、定义、组合、统一和协调各项目管理过程组的各个子过程和活动",
+      },
+    ];
+    var dom = document.querySelector("#div");
+    dom.innerHTML =
+      "<h2>" +
+      list[0].title +
+      "</h2>" +
+      "<p>" +
+      list[0].txt +
+      "</p>" +
+      "<h2>" +
+      list[1].title +
+      "</h2>" +
+      "<p>" +
+      list[1].txt +
+      "</p>";
+  </script>
+</html>
